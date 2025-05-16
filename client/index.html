@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClickMaster - Incremental Clicker Game</title>
+  <meta name="description" content="Click to earn currency, upgrade to prosper. An incremental clicker game with multiple upgrade types." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZWM4MzQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1tb3VzZS1wb2ludGVyLWNsaWNrIj48cGF0aCBkPSJNOSAzSDV2NGw0LjU4NiA0LjU4NiIvPjxwYXRoIGQ9Ik05IDMgNSA3bTExLS45NTggMy45NTgtMy45NTgtNCAxLTEtNCAzLjk1OCAzLjk1OHoiLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjEzIiByPSI2IiBmaWxsPSIjZjU5ZTBiIi8+PHBhdGggZD0ibTE1IDE3LTIgMi0yLTIiLz48cGF0aCBkPSJtMTEgMTEgMiAyIi8+PC9zdmc+" />
+  
+  <!-- Font preloading (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Theme color for browser UI -->
+  <meta name="theme-color" content="#1a1a1a">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  
+  <!-- Prevent right-click to avoid context menu distractions -->
+  <script>
+    document.addEventListener('contextmenu', event => {
+      // Allow context menu in development
+      if (window.location.hostname === 'localhost') return;
+      event.preventDefault();
+    });
+  </script>
+</body>
+</html>
